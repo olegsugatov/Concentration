@@ -33,14 +33,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var touchLabel: UILabel!
     @IBAction func btnAction(_ sender: UIButton) {
         touches += 1
+        // Optional Binding
         if let buttonIndex = btnCollection.firstIndex(of: sender) {
             flipButton(emoji: emojiCollection[buttonIndex], button: sender)
         }
     }
-    
-    
-    
-
-
 }
-
